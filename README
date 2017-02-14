@@ -1,0 +1,57 @@
+
+Movie Review Classification
+- Implementation a Naive Bayes Classifier from scratch
+By Dhanush Thotadur Divakara
+
+To run the training file:
+
+	python nbtrain.py [training directory] [model file]
+The training directory should be in the same directory as nbtrain.py and the same goes with the model file
+
+To run the test file:
+	
+	python nbtest.py [model file] [test directory] [predictions file]
+
+The test directory should contain all the files and not contain a subdirectory. So to run the development files, copy pos and neg folders to the same directory as nbtest.py
+
+
+logratiopos file has the log ratio of positive to negative term weights for top 20 terms sorted in descending order. The log base is 2.
+
+logrationeg file has the log ratio of negative to positive term weights for top 20 terms sorted in descending order. The log base is 2.
+
+predictionsfiletest contains the filenames, positive and negative probabilities (log probabilities) for test data
+
+No of positive reviews : 90 
+No of Negative reviews :110 
+Pos percentage :45.0 
+neg percentage :55.0
+
+predictionsfilepos contains the filenames , positive and negative probabilities (log probabilities) for pos folder in dev (development data - positive reviews)
+Accuracy for positive reviews in dev data is 75% i.e it classifies 75% of the positive reviews correctly
+
+predictionsfileneg contains the filenames , positive and negative probabilities (log probabilities) for neg folder in dev (development data - negative reviews)
+Accuracy for negative reviews in dev data is 80% i.e it classifies 80% of the negative reviews correctly
+
+Percentage for correct classification in development data: 77.5%
+
+Files submitted:
+nbtrain.py
+nbtest.py
+predictionfileneg
+predictionsfilepos
+predictionsfiletest
+modelfile
+logrationeg
+logratiopos
+README
+
+Folders:
+train
+test
+pos
+neg
+
+Note: pos and neg are from development data
+
+
+
